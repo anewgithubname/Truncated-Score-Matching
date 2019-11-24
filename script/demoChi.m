@@ -82,9 +82,9 @@ Xt = [X1(:), X2(:)]';
 [~, g] = polyfit2(mu_hat, gradF, grad2F, Xt, dist, t);
 Z = zeros(1,size(Xt,2));
 Z(dist<0) = g;
-figure; 
+hg0 = figure; 
 h = surf(X1,X2,reshape(Z,size(X1)));
-view(0,75)
+view(0,90)
 shading interp
 lightangle(-45,30)
 h.FaceLighting = 'gouraud';
@@ -93,3 +93,4 @@ h.DiffuseStrength = 0.8;
 h.SpecularStrength = 0.9;
 h.SpecularExponent = 25;
 h.BackFaceLighting = 'unlit';
+saveas(hg0,'gChi.png')
