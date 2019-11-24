@@ -10,8 +10,6 @@ This code also requires MATLAB's symbolic toolbox and can be accelerated if para
 ## How to run
 ```bash
 cd script
-```
-```matlab
 matlab -nodesktop -r 'demoChi'
 ```
 
