@@ -1,4 +1,4 @@
-clear; rng default;
+clear; rng default; addpath(genpath('../'))
 d = 2;
 sigma = 0.06;
 
@@ -17,7 +17,7 @@ gradF = matlabFunction(gradX_logP,'Vars',{X,mu});
 grad2F = matlabFunction(gradX2_logP,'Vars',{X,mu});
 
 %% Load Chicago boundary and crime data
-load chi
+load data/chi.mat
 SX = SX(~isnan(SX));
 SY = SY(~isnan(SY));
 partialV = [SX(1:11350);SY(1:11350)]';
