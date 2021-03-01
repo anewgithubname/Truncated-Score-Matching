@@ -1,19 +1,10 @@
 # Truncated-Score-Matching
 Code for https://arxiv.org/abs/1910.03834
 
-This code uses Alejandro Weinstein's Distance from a point to polygon MATLAB code: 
-
-https://www.mathworks.com/matlabcentral/fileexchange/19398-distance-from-a-point-to-polygon
-
-This code also requires MATLAB's symbolic toolbox and can be accelerated if parallel computing toolbox is available. 
+This code requires MATLAB's symbolic toolbox and can be accelerated if parallel computing toolbox is available. If you would like to run OSVM illustratice example, CVX optimization software is needed. 
 
 ## How to run
-```bash
-cd script
-matlab -nodesktop -r 'demoChi'
-```
+Please see README file at each folder on how to reproduce our results.
 
-You should see
-![Chicago Crime Dataset Gaussian Mixture Fit](script/n_513.png)
-
-![g0 on Chicago boundary](script/gChi.png)
+Acknowledgements
+This code uses Alejandro Weinstein's Distance from a point to polygon MATLAB function, and "NPERMUTEK" by Matt Fig that returns Permutation of elements. 
